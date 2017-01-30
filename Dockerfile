@@ -27,6 +27,9 @@ RUN curl -sL -0 https://services.gradle.org/distributions/gradle-${GRADLE_VERSIO
     rm /tmp/gradle-${GRADLE_VERSION}-bin.zip && \
     mv /usr/local/gradle-${GRADLE_VERSION} /usr/local/gradle && \
     ln -sf /usr/local/gradle/bin/gradle /usr/local/bin/gradle
+    
+RUN curl --silent --location https://rpm.nodesource.com/setup_7.x | bash -
+RUN yum -y install nodejs
 
 ENV PATH=/opt/maven/bin/:/opt/gradle/bin/:$PATH
 
