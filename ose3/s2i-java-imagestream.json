@@ -5,16 +5,15 @@
       "name": "s2i-java"
    },
    "spec": {
-      "dockerImageRepository": "jorgemoralespou/s2i-java",
+      "dockerImageRepository": "acron/s2i-java",
       "tags": [
          {
             "name": "latest",
             "annotations": {
                "description": "Java OpenJDK S2I image",
                "iconClass": "icon-jboss",
-               "tags": "builder,java,maven,gradle,springboot,vertx,widlfly-swarm,dropwizard,microservices,fatjar",
+               "tags": "builder,java,gradle,springboot,microservices,fatjar",
                "supports": "java:8,maven:3,gradle:2.6",
-               "sampleRepo": "https://github.com/jorgemoralespou/springboot-sample-app.git",
                "version": "1.0"
             }
          }
